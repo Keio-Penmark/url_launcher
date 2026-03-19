@@ -144,7 +144,7 @@ public class WebViewActivity extends Activity {
     webview.setWebChromeClient(new FlutterWebChromeClient());
 
     ContextCompat.registerReceiver(
-        this, broadcastReceiver, closeIntentFilter, ContextCompat.RECEIVER_EXPORTED);
+        this, broadcastReceiver, closeIntentFilter, ContextCompat.RECEIVER_NOT_EXPORTED);
   }
 
   @VisibleForTesting
